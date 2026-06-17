@@ -3,31 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>The Joy of Pickleball</title>
-    <!-- Linking to your from-scratch stylesheet -->
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
 
-    <!-- Div #1 -->
     <div class="header-box">
         <h1>Welcome to the Pickleball Court</h1>
-        <!-- Link navigating back to your professional page -->
         <a href="index.html">← Back to Professional Resume</a> 
         <br><br>
-        <!-- On-page anchor link -->
         <a href="#data-section">Jump to Player Stats & Data ↓</a>
         <br><br>
-        <!-- Link to the Web App -->
         <a href="app.html">🎾 Open the Pickleball Score Tracker App</a>
     </div>
 
-    <!-- Div #2 -->
     <div class="content-box">
         <h2>Why Everyone is Playing</h2>
         <p>Pickleball is the fastest-growing sport in America. It combines elements of tennis, badminton, and ping-pong, making it incredibly accessible for beginners but highly competitive for advanced players.</p>
         
         <h3>The Basics to Get Started</h3>
-        <!-- An unordered list embedded inside an ordered list -->
         <ol>
             <li><strong>Essential Equipment</strong>
                 <ul>
@@ -46,37 +39,32 @@
         </ol>
     </div>
 
-    <!-- Div #3 -->
     <div class="media-box">
         <h2>See It In Action</h2>
         
-        <!-- Standard Image using a local file (Make sure you save a picture as pickleball.jpg!) -->
         <img src="pickleball.jpg" alt="Pickleball Action" width="500" style="border-radius: 8px;">
         
         <br><br>
         
-        <!-- Embedded YouTube Video (How to Play Pickleball) -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fTvPYdKZqO0" title="How to Play Pickleball" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <!-- The target for the on-page anchor -->
     <div class="content-box" id="data-section">
-        <h2>Interactive Data</h2>
-        <p>Below is a live, interactive data visualization embedded from Tableau Public.</p>
+        <h2>Interactive Data: Court Locations</h2>
+        <p>Below is a live, interactive data visualization mapping out Pickleball courts.</p>
         
-        <!-- LIVE TABLEAU EMBED -->
-        <div class='tableauPlaceholder' id='viz1718600000000' style='position: relative; width: 100%; height: 600px;'>
+        <div class='tableauPlaceholder' id='viz1718600000001' style='position: relative; width: 100%; height: 600px;'>
             <noscript>
-                <a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/Storms/1_rss.png' style='border: none' /></a>
+                <a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/Pi/PickleballCourtsbyYearEstablished/Courtsbyparkdistrictandrestroomavailability/1_rss.png' style='border: none' /></a>
             </noscript>
-            <object class='tableauViz' style='display:none;'>
+            <object class='tableauViz'  style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
                 <param name='embed_code_version' value='3' /> 
                 <param name='site_root' value='' />
-                <param name='name' value='RegionalSampleWorkbook/Storms' />
-                <param name='tabs' value='yes' />
+                <param name='name' value='PickleballCourtsbyYearEstablished&#47;Courtsbyparkdistrictandrestroomavailability' />
+                <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
-                <param name='static_image' value='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/Storms/1.png' /> 
+                <param name='static_image' value='https://public.tableau.com/static/images/Pi/PickleballCourtsbyYearEstablished/Courtsbyparkdistrictandrestroomavailability/1.png' /> 
                 <param name='animate_transition' value='yes' />
                 <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
@@ -86,7 +74,7 @@
             </object>
         </div>
         <script type='text/javascript'>
-            var divElement = document.getElementById('viz1718600000000');
+            var divElement = document.getElementById('viz1718600000001');
             var vizElement = divElement.getElementsByTagName('object')[0];
             vizElement.style.width='100%';vizElement.style.height='600px';
             var scriptElement = document.createElement('script');
