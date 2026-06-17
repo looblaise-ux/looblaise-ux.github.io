@@ -1,0 +1,57 @@
+/* Style Definition 1: Custom background color and font family */
+body {
+    background-color: #f0f3f4; 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style Definition 2: Font color */
+h1 {
+    color: #1a252f; 
+    text-align: center;
+}
+
+h2 {
+    color: #27ae60; /* Sporty Court Green */
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style Definition 3: Styling Div #1 */
+.header-box {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #27ae60; /* Court Green accent */
+    margin-bottom: 20px;
+}
+
+/* Style Definition 4: Styling Div #2 */
+.content-box {
+    background-color: #ffffff;
+    width: 75%;
+    margin: 0 auto 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Style Definition 5: Styling Div #3 */
+.media-box {
+    background-color: #1a252f; /* Navy Blue */
+    color: #ffffff;
+    width: 75%;
+    margin: 0 auto 20px auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.media-box h2 {
+    color: #ffffff;
+}
