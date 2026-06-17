@@ -42,7 +42,7 @@
     <div class="media-box">
         <h2>See It In Action</h2>
         
-        <img src="pickleball.jpg" alt="Pickleball Action" width="500" style="border-radius: 8px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Pickleball_paddle_and_ball_on_court.jpg/640px-Pickleball_paddle_and_ball_on_court.jpg" alt="Pickleball Action" width="500" style="border-radius: 8px;">
         
         <br><br>
         
@@ -50,21 +50,19 @@
     </div>
 
     <div class="content-box" id="data-section">
-        <h2>Interactive Data: Court Locations</h2>
+        <h2>Interactive Data: Courts by State</h2>
         <p>Below is a live, interactive data visualization mapping out Pickleball courts.</p>
         
-        <div class='tableauPlaceholder' id='viz1718600000001' style='position: relative; width: 100%; height: 600px;'>
+        <div class='tableauPlaceholder' id='viz1781671413728' style='position: relative'>
             <noscript>
-                <a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/Pi/PickleballCourtsbyYearEstablished/Courtsbyparkdistrictandrestroomavailability/1_rss.png' style='border: none' /></a>
+                <a href='#'><img alt='Courts by State ' src='https://public.tableau.com/static/images/RF/RF6F3BNSZ/1_rss.png' style='border: none' /></a>
             </noscript>
             <object class='tableauViz'  style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
                 <param name='embed_code_version' value='3' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='PickleballCourtsbyYearEstablished&#47;Courtsbyparkdistrictandrestroomavailability' />
-                <param name='tabs' value='no' />
+                <param name='path' value='shared/RF6F3BNSZ' /> 
                 <param name='toolbar' value='yes' />
-                <param name='static_image' value='https://public.tableau.com/static/images/Pi/PickleballCourtsbyYearEstablished/Courtsbyparkdistrictandrestroomavailability/1.png' /> 
+                <param name='static_image' value='https://public.tableau.com/static/images/RF/RF6F3BNSZ/1.png' /> 
                 <param name='animate_transition' value='yes' />
                 <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
@@ -72,14 +70,15 @@
                 <param name='display_count' value='yes' />
                 <param name='language' value='en-US' />
             </object>
-        </div>
-        <script type='text/javascript'>
-            var divElement = document.getElementById('viz1718600000001');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            vizElement.style.width='100%';vizElement.style.height='600px';
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1781671413728');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            vizElement.style.width='100%';
+            vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
         </script>
         
     </div>
