@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickleball Score Tracker</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .scoreboard {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+        }
+        .team {
+            background-color: #ffffff;
+            color: #1a252f;
+            padding: 30px;
+            border-radius: 10px;
+            width: 200px;
+            border: 5px solid #27ae60;
+        }
+        .score {
+            font-size: 80px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .add-btn {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .add-btn:hover {
+            background-color: #2ecc71;
+        }
+        .reset-btn {
+            margin-top: 40px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .reset-btn:hover {
+            background-color: #c0392b;
+        }
+        .back-link {
+            display: block;
+            margin-top: 50px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pickleball Score Tracker</h1>
+    <p>First to 11 wins (must win by 2)!</p>
+
+    <div class="scoreboard">
+        <div class="team">
+            <h2>Team 1</h2>
+            <div class="score" id="score1">0</div>
+            <button class="add-btn" onclick="addScore(1)">+1 Point</button>
+        </div>
+        <div class="team">
+            <h2>Team 2</h2>
+            <div class="score" id="score2">0</div>
+            <button class="add-btn" onclick="addScore(2)">+1 Point</button>
+        </div>
+    </div>
+
+    <button class="reset-btn" onclick="resetGame()">Reset Game</button>
+    
+    <!-- Link back to the scratch page -->
+    <a href="scratch.html" class="back-link">← Back to Pickleball Page</a>
+
+    <script>
+        let score1 = 0;
+        let score2 = 0;
+
+        function addScore(team) {
+            if (team === 1) {
+                score1++;
+                document.getElementById('score1').innerText = score1;
+            } else {
+                score2++;
+                document.getElementById('score2').innerText = score2;
+            }
+            checkWin();
+        }
+
+        function checkWin() {
+            // Check if a team has at least 11 points AND is ahead by 2 or more
+            if (score1 >= 11 && (score1 - score2) >= 2) {
+                alert("Team 1 Wins the Game!");
+            } else if (score2 >= 11 && (score2 - score1) >= 2) {
+                alert("Team 2 Wins the Game!");
+            }
+        }
+
+        function resetGame() {
+            score1 = 0;
+            score2 = 0;
+            document.getElementById('score1').innerText = score1;
+            document.getElementById('score2').innerText = score2;
+        }
+    </script>
+</body>
+</html>
